@@ -14,50 +14,53 @@
             background-color: #f8f9fa;
         }
         .tall-section {
-            height: 1800px; /* Set the desired height for the tall section */
+            height: 1800px; 
             background-color: #f8f9fa;
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-default navbar-static-top bg-grey" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-expanded="true">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Food, LLC</a>
-                </div>
-    
-                <div class="collapse navbar-collapse in bg-grey" id="navbarNavDropdown">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                                aria-expanded="true">
-                                Menu <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#" class="text-center">Chicken</a></li>
-                                <li><a href="#" class="text-center">Beef</a></li>
-                                <li><a href="#" class="text-center">Sushi</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="index.html">Food, LLC</a>
+          </div>
+          
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+        
+      </div>
+
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+           <li>
+             <a href="#section-chicken">Chicken</a>
+           </li>
+           <li>
+             <a href="#section-beef">Beaf</a>
+           </li>
+           <li>
+             <a href="#section-sushi">Sushi</a>
+           </li>
+         </ul>
+       </div>
+
+      
+    </nav>
+  </header>
     
     <h1 class="heading-title text-center">Our Menu</h1>
 
     <div class="box">
         <div class="container-md item1 container-sm">
-            <section>
+            <section id="section-chicken">
                 <div id="chicken">
                     <p>Chicken</p>
                 </div>
@@ -66,7 +69,7 @@
         </div>
 
         <div class="container-md item2 container-sm">
-            <section>
+            <section id="section-beef">
                 <div id="beef">
                     <p>Beef</p>
                 </div>
@@ -75,7 +78,7 @@
         </div>
 
         <div class="container-md item3 container-sm">
-            <section>
+            <section id="section-sushi">
                 <div id="sushi">
                     <p>Sushi</p>
                 </div>
@@ -89,8 +92,8 @@
             <div class="row">
                 <div class="col-xs-12">
 
-                    <h2>Ceola Gourmet - Discover the Taste of Australia</h2>
-                    <p>Welcome to Ceola Gourmet, a culinary haven nestled in the heart of Australia. Our restaurant is an exquisite blend of flavors, ambiance, and warm hospitality, offering an unforgettable dining experience that captures the essence of Australian cuisine.
+                    <h2 class="text-center">Ceola Gourmet - Discover the Taste of Australia</h2>
+                    <p class="text-justify">Welcome to Ceola Gourmet, a culinary haven nestled in the heart of Australia. Our restaurant is an exquisite blend of flavors, ambiance, and warm hospitality, offering an unforgettable dining experience that captures the essence of Australian cuisine.
                         From the moment you step through our doors, you'll be transported into a world of gastronomic delights. Ceola Gourmet, named after the fusion of celestial and earthly flavors, represents our commitment to crafting extraordinary dishes that tantalize the senses and elevate the dining experience to new heights.
                         At Ceola Gourmet, we believe in the power of ingredients. Our talented team of chefs, renowned for their culinary expertise and creativity, meticulously curates a menu that celebrates the diversity and richness of Australian produce. We source our ingredients from local farmers and artisans who share our passion for quality and sustainability. This allows us to showcase the very best that Australia has to offer while supporting the local community.
                         Prepare to embark on a culinary journey like no other. Begin your gastronomic adventure with our enticing appetizers, carefully crafted to awaken your taste buds and set the stage for an extraordinary dining experience. Indulge in our delicate Tasmanian smoked salmon, expertly paired with a zesty lemon-infused crème fraîche, or savor the unique blend of flavors in our wild mushroom tartlet, featuring a medley of locally foraged mushrooms nestled in a flaky pastry.

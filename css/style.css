@@ -10,18 +10,30 @@ header {
   }
   
   /* Navbar */
-  .navbar {
+.navbar {
     background-color: gray;
-  }
-  
+    color: black;
+}  
+ 
   .navbar-brand {
     color: black;
+   
+}
+  .navbar-brand a {
+    color: black;
+  
+
   }
   
   .navbar-toggler {
     border-color: black;
   }
   
+  .navbar-collapse {
+    background-color: white;
+
+}
+
   .dropdown-menu-wide {
     min-width: 100vw;
     background-color: #f8f9fa;
@@ -177,3 +189,4 @@ p {
 #nav-text a {
     text-align: center;
 }
+
